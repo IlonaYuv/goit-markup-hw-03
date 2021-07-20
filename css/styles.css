@@ -12,16 +12,33 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+/* Page Header */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
 }
 
 /* Logo */
@@ -78,8 +95,11 @@ body {
 /* Hero */
 .hero {
   background-color: var(--blocks-bg-color);
+  text-align: center;
 }
+
 .hero-title {
+  margin-bottom: 30px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -89,6 +109,8 @@ body {
   text-transform: uppercase;
 }
 .button-primary {
+  border-radius: 4px;
+  min-width: 200px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -100,7 +122,11 @@ body {
 }
 
 /* Features */
+.section {
+  padding: 94px 0;
+}
 .features-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -112,7 +138,12 @@ body {
 }
 
 /* Examples */
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -124,12 +155,15 @@ body {
   background-color: var(--secondary-white-color);
 }
 .team-title {
+  padding-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 .team-text {
+  padding-bottom: 30px;
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
@@ -141,6 +175,7 @@ body {
 .footer {
   background-color: var(--blocks-bg-color);
 }
+
 .footer-adress {
   color: var(--primary-white-color);
   font-style: normal;
@@ -155,6 +190,9 @@ body {
 }
 
 /* Portfolio Page */
+.list.button {
+  margin-bottom: 50px;
+}
 .button-secondary {
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
@@ -175,6 +213,8 @@ body {
   text-decoration: none;
 }
 .projects-title {
+  padding-top: 20px;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -182,6 +222,7 @@ body {
   letter-spacing: 0.06em;
 }
 .projects-text {
+  padding-bottom: 20px;
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
