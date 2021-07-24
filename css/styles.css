@@ -62,10 +62,10 @@ img {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
+  padding-left: 15px;
   margin-right: auto;
+  margin-left: auto;
 }
 
 /* Logo */
@@ -163,10 +163,10 @@ img {
 }
 .button-primary {
   min-width: 200px;
-  padding-left: 32px;
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 32px;
   /* До момента добавления фона */
   margin-bottom: 200px;
 
@@ -308,10 +308,10 @@ img {
   padding-bottom: 16px;
 }
 .button-secondary {
-  padding-left: 22px;
   padding-top: 6px;
   padding-right: 22px;
   padding-bottom: 6px;
+  padding-left: 22px;
 
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
@@ -351,10 +351,10 @@ img {
   margin-bottom: 50px;
 }
 .content {
-  padding-left: 24px;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
+  padding-left: 24px;
 
   border: 1px solid #eeeeee;
 }
