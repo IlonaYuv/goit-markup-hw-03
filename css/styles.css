@@ -190,7 +190,11 @@ img {
   padding-bottom: 94px;
 }
 .section-title.hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .features {
   display: flex;
