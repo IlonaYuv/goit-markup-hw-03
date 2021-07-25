@@ -7,7 +7,6 @@
   --black-color: #000000;
   --secondary-bg-color: #f5f4fa;
   --blocks-bg-color: #2f303a;
-  --page-header-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --btn-primary-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --team-list-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -54,7 +53,7 @@ img {
   align-items: center;
 }
 .page-header {
-  box-shadow: var(--page-header-shadow);
+  border-bottom: 1px solid #ececec;
 }
 .navigation {
   display: flex;
@@ -145,14 +144,14 @@ img {
 
 /* Hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--blocks-bg-color);
   text-align: center;
 }
 
 .hero-title {
   margin-bottom: var(--margin-set);
-  /* До момента добавления фона */
-  padding-top: 200px;
 
   color: var(--primary-white-color);
   font-weight: 900;
@@ -168,8 +167,6 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
-  /* До момента добавления фона */
-  margin-bottom: 200px;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -199,8 +196,6 @@ img {
 .features {
   display: flex;
   flex-wrap: wrap;
-}
-.features .item {
   margin-top: calc(-1 * var(--margin-set));
   margin-left: calc(-1 * var(--margin-set));
 }
@@ -286,22 +281,21 @@ img {
 }
 
 /* Footer */
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer {
+
   background-color: var(--blocks-bg-color);
 }
 .footer-adress {
-  padding-top: 20px;
+  margin-top: 20px;
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
 }
 .footer-contacts {
-  padding-top: 9px;
+  margin-top: 9px;
   color: var(--secondary-white-color);
   font-style: normal;
   font-weight: 400;
@@ -310,20 +304,18 @@ img {
 
 /* Portfolio Page */
 .section.portfolio {
-  padding-top: 75px;
+  /* в макете верхний - 75px */
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .button-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .button-list .item:not(:last-child) {
   margin-right: 8px;
-}
-.button-list .item {
-  padding-bottom: 16px;
 }
 .button-secondary {
   padding-top: 6px;
